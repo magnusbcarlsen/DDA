@@ -237,7 +237,7 @@ header {
 
 .parallax {
     /* The image used */
-    background-image: url("img/welcomepic.jpg");
+    background-image: url("img/welcomepic.svg");
     /* Full height */
     height: 100%;
     /* Create the parallax scrolling effect */
@@ -254,6 +254,8 @@ header {
     padding-top: 100px;
     margin: 0 auto;
 }
+
+
 
 
 
@@ -299,7 +301,7 @@ header {
     text-align: center;
     outline: none;
     font-size: 15px;
-    margin: 59px auto;
+    margin: 20px auto;
     margin-bottom: 0px;
     display: block;
     border-radius: 10px;
@@ -1001,7 +1003,7 @@ ol {
     }
 
     .about_container {
-        clip-path: polygon(5% 0, 95% 0, 65% 100%, 35% 100%);
+        clip-path: polygon(10% 0, 90% 0, 89% 11%, 80% 13%, 70% 100%, 30% 100%, 20% 13%, 11% 11%)
 
 }
 }
@@ -1026,6 +1028,16 @@ ol {
     }
 
     .about_container {
-        clip-path: polygon(5% 0, 95% 0, 65% 100%, 35% 100%);
+        clip-path: polygon(10% 0, 90% 0, 89% 11%, 80% 13%, 70% 100%, 30% 100%, 20% 13%, 11% 11%)
     }
 }
+
+
+[data-aos="fade"] {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  [data-aos="fade"].aos-animate {
+    opacity: 1;
+  }

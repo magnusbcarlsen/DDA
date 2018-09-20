@@ -112,3 +112,21 @@ window.onclick = function priv (event) {
         modal_priv.style.display = "none";
     }
 } */
+
+
+const nav = document.querySelectorAll("#menu")
+
+const tl = new TimelineMax(/* {repeat: -1, repeatDelay: 1} */);
+
+
+tl.staggerFrom(nav, 2,
+  {
+    ease: Elastic.easeOut.config(1, 0.3), x: -100 
+  },
+
+0.5
+);
+
+AOS.init({
+    duration: 1200,
+  })

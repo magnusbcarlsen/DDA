@@ -14,6 +14,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
 </head>
 
@@ -26,7 +27,7 @@
             <a href="#about">About</a>
             <a href="#member">Member</a>
             <a href="#member">Volunteer</a>
-            <a href="#staff">Staff</a>
+            <a href="#staff">The board</a>
         </div>
 
         <!-- Use any element to open the sidenav -->
@@ -44,16 +45,19 @@
 
 
     </header>
-
     <div class="parallax"></div>
-    <div class="forsidelogo"><img src="img/ddalogo.png"></div>
+    
+    <div class="forsidelogo"><img src="img/Asset 11.svg"></div>
 
+    
     <section id="news_event">
+            <div data-aos="fade">
+            
         <div class="container_1">
             <div id="news1">
                 <h1>NEWS</h1>
                 
-            <button class="collapsible">“Welcome to Danish Debate Association! I am delighted that you are interested in the organisation which aims to foster a debating culture in Denmark.</button>
+                <button class="collapsible">“Welcome to Danish Debate Association! I am delighted that you are interested in the organisation which aims to foster a debating culture in Denmark. Click to read more!</button>
             <div class="content"> 
                 <p><i>When we founded the organisation, we saw an opportunity: the ability to further the critical thinking and public speaking skills amongst Danish youth.</i></p>
                 <p><i>It is no secret that the world is becoming ever more complex, and, often, that is great! It is an indication of how our knowledge improves and how our quality of life improves with it. However, this complexity also requires individuals to develop the ability to process more information and identify those areas where the complexity may not benefit themselves or the society more broadly.
@@ -85,6 +89,8 @@
             </div>
 
         </div>
+    </div>
+    
 
     </section>
     <section id="about">
@@ -116,11 +122,11 @@
 
 
                     <label for="phone">Phone</label>
-                    <input type="text" id="phone" name="phone" placeholder="Your phone number">
+                    <input type="text" id="phone" phone="phone" placeholder="Your phone number">
 
 
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your email">
+                    <input type="text" id="email" email="email" placeholder="Your email">
 
                     <input type="submit" value="Submit">
 
@@ -177,6 +183,8 @@
                 <div class="contactform">
                     <form action="mail.php" method="POST">
 
+                        
+
                         <label for="fname">Name</label>
                         <input type="text" id="fname" name="name" placeholder="Your name">
 
@@ -186,7 +194,7 @@
 
 
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Your email">
+                        <input type="text" id="email" name="email" placeholder="Your email"> 
 
                         <input type="submit" value="Submit">
 

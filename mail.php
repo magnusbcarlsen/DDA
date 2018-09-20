@@ -8,15 +8,16 @@
 </head>
 
 <body>
-    <?php $name = $_POST['name'];
+    <?php 
+$name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
-$formcontent="From: $name \n Message: $message";
+$formcontent="From: $name \nphone: $phone";
 $recipient = "ninja.magnus@gmail.com";
-$subject = "member";
+$subject = "Member";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!";
+echo "Congratulations! You're now a member of Danish Debate";
 ?>
 
 
