@@ -1,0 +1,1031 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    background-color: #ededed;
+    scroll-behavior: smooth;
+}
+
+button:hover {
+    transform: scale(1.1)
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+
+}
+
+p {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/******************************* The side navigation menu ***************************/
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #1a3343;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    border-right: 1px solid #ededed;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.sidenav img {
+    width: 200px;
+    display: block;
+    margin: 40px auto;
+}
+
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #ededed;
+}
+
+
+#menu {
+    position: fixed;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+#menu:hover {
+    cursor: pointer;
+    animation: rot 0.3s 1 forwards;
+    transform-origin: 50% 50%;
+
+  
+}
+@keyframes rot {
+    to{
+        transform: rotate(90deg)
+    } from {
+
+    }
+}
+
+.streger {
+    width: 35px;
+    height: 5px;
+    background-color: #9c2835;
+    margin: 6px 0;
+    z-index: 1;
+}
+
+
+#header_top {
+    padding-left: 40px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-right: 10px;
+    float: right;
+}
+
+.icons:hover{
+    transform: scale(1.3);
+}
+
+.icons_02 {
+    width: 50%;
+    height: auto;
+    padding-left: 18%;
+    
+
+}
+
+.icons_03 {
+    width: 67%;
+    height: auto;
+    margin-top: 12%;
+    padding-left: 10%;
+    position: right;
+}
+
+.icons_04 {
+    width: 60%;
+    height: auto;
+    margin-top: 12%;
+    padding-left: 11%;
+}
+
+.icons:first-child {
+    width: 30px;
+    height: 30px;
+
+}
+
+.icons:nth-child(2) {
+    width: 30px;
+    height: 30px;
+}
+
+.icons:nth-child(3) {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+   
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+/*******************************Menu slut*****************************************/
+
+.parallax {
+    /* The image used */
+    background-image: url("img/welcomepic.jpg");
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.forsidelogo img {
+    max-width: 200px;
+    display: block;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+
+
+
+/*******************************start billede************************************/
+
+/*************************news/event******************************************/
+
+.container_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#news_event h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#news_event p {
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+#news_event p {
+    padding-bottom: 10px;
+}
+
+#news_event h2 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible {
+    background-color: #ccc;
+    color: #1a3343;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    margin: 59px auto;
+    margin-bottom: 0px;
+    display: block;
+    border-radius: 10px;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.collapsible:hover {
+    background-color: #1a3343;
+    color: #ededed;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin: 10px;
+   
+}
+
+
+/*************************news/event slut******************************************/
+
+/*************************About******************************************/
+
+.about_container {
+    display: grid;
+    text-align: center;
+    background-color: #1a3343;
+    width: 100vw;
+    margin-top: 30px;
+
+
+}
+
+#about h1 {
+    text-align: center;
+    color: #ededed;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#about p {
+    text-align: center;
+    color: #ededed;
+    width: 350px;
+    margin: 20px auto;
+}
+
+
+
+
+
+/*********************************************member**************************/
+
+
+
+.memtekst1 {
+    height: 200px;
+}
+
+.memtekst2 {
+    height: 200px;
+}
+
+.memvol_container {
+    display: grid;
+    grid-template-columns: 2;
+    width: 100%;
+}
+
+.container_member {
+    grid-column: 1;
+}
+
+.container_vol {
+    grid-column: 2;
+
+}
+
+
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #1a3343;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+    background-color: #2e5a76;
+}
+
+/* Add a background color and some padding around the form */
+
+.container_member {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 80%;
+    grid-column: 1;
+    margin: 40px auto;
+
+}
+
+.container_vol {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 80%;
+    grid-column: 2;
+    margin: 40px auto;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #ededed;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #1a3343;
+    width: 70%;
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#member button {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: 30px;
+    background-color: #1a3343;
+    color: #ededed;
+    border: none;
+    border-radius: 10px;
+}
+
+#member button:hover {
+    background-color: #2e5a76;
+    color: #ededed;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+
+}
+
+#member h2 {
+    margin-left: 10px;
+    text-align: center;
+}
+
+#member ul,
+ol {
+    padding: 10px;
+    font-family: 'Open sans', sans-serif;
+}
+
+
+
+
+
+
+/*********************************************member**************************/
+
+/*********************************************Staff**************************/
+
+.container_5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#staff h2 {
+    text-align: center;
+}
+
+#staff h3 {
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+#staff p {
+    padding-top: 10px;
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+
+#staff img {
+    width: 200px;
+    display: block;
+    margin: 30px auto;
+    height: 250px;
+    object-fit: cover;
+    clip-path: circle(44% at 50% 50%);
+
+}
+
+.mail {
+    padding-left: 30px;
+}
+
+/*********************************************Staff end**************************/
+
+/*********************************************footer**************************/
+
+#footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 200px;
+    background-color: #1a3343;
+}
+
+#footer h2 {
+    text-align: center;
+}
+
+#footer h3 {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+#footer ul {
+    font-family: 'Open sans', sans-serif;
+    margin-left: 10px;
+}
+
+.modal_terms {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content_terms {
+    background-color: #ededed;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #1a3343;
+    width: 70%;
+}
+
+
+
+.close_terms {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close_terms:hover,
+.close_terms:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_terms {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal_priv {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content_priv {
+    background-color: #ededed;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #1a3343;
+    width: 70%;
+}
+
+.modal-content_priv h2 {
+    text-align: center;
+}
+
+.close_priv {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close_priv:hover,
+.close_priv:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#footer button {
+    display: block;
+    margin: 50px auto;
+    width: 200px;
+    height: 30px;
+    background-color: #ccc;
+    background-color: #1a3343;
+    color: #ededed;
+    border-radius: 10px;
+
+}
+
+#footer button:hover {
+    background-color: #2e5a76;
+
+}
+
+
+
+/*********************************************craeted**************************/
+
+#created {
+
+    background-color: #bcbcbc;
+    text-align: center;
+}
+
+#created p {
+    font-size: 0.8em;
+}
+
+/*********************************************Media**************************/
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .sidenav img {
+        width: 100px;
+        display: block;
+        margin: 40px auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container_5 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .container_1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .collapsible {
+        margin-bottom: 20px;
+    }
+
+    .parallax {
+        display: none;
+
+    }
+
+    .about_container {
+        width: 100%;
+    }
+
+    #about p {
+        text-align: left;
+        width: 250px;
+
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+    .modal-content_terms {
+        width: 80%;
+    }
+
+    .modal-content_terms h1 {
+        font-size: 1rem
+    }
+    .modal-content_terms h2 {
+        font-size: 0.8rem;
+        padding-top: 20px;
+    }
+
+    .modal-content_priv h1 {
+        font-size: 1rem
+    }
+    .modal-content_priv h2 {
+        font-size: 0.8rem;
+        padding-top: 20px;
+    }
+    .modal-content_priv {
+        width: 80%;
+    }
+
+    #member {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr, 2fr;
+    }
+
+    .memvol_container {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+        width: 100%;
+    }
+    
+    .container_member {
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+    
+    .container_vol {
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 10px;
+        
+    
+    }
+    .memtekst1 {
+        height: 200px;
+    }
+    
+    .memtekst2 {
+        height: 300px;
+    }
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .container_5 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .container_1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .collapsible {
+        margin-bottom: 20px;
+    }
+
+    .parallax {
+        display: none;
+
+    }
+
+    #about p {
+        text-align: left;
+        width: 250px;
+
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+    .modal-content_terms {
+        width: 80%;
+    }
+    .modal-content_priv {
+        width: 80%;
+    }
+
+    #member {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr, 2fr;
+    }
+
+    .memvol_container {
+        display: grid;
+        grid-template-columns: 1;
+    }
+
+    .memvol_container {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+        width: 100%;
+    }
+    
+    .container_member {
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+    
+    .container_vol {
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 10px;
+        
+    
+    }
+    .memtekst1 {
+        height: 200px;
+    }
+    
+    .memtekst2 {
+        height: 300px;
+    }
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .container_5 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .parallax {
+        background-attachment: scroll;
+
+    }
+
+    .forsidelogo {
+        display: none;
+    }
+
+    .memvol_container {
+        display: grid;
+        grid-template-columns: 1;
+    }
+    .memtekst2 {
+        height: 300px;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .container_5 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .forsidelogo {
+        display: none;
+    }
+
+    .memvol_container {
+        display: grid;
+        grid-template-columns: 2;
+    }
+
+    .memtekst1 {
+        height: 250px;
+    }
+    .memtekst2 {
+        height: 250px;
+    }
+
+    .about_container {
+        clip-path: polygon(5% 0, 95% 0, 65% 100%, 35% 100%);
+
+}
+}
+
+
+@media only screen and (min-width: 1001px) {
+
+    .container_5 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+
+    .forsidelogo {
+        display: none;
+    }
+
+    .memvol_container {
+        display: grid;
+        grid-template-columns: 2;
+        width: 100%;
+    }
+
+    .about_container {
+        clip-path: polygon(5% 0, 95% 0, 65% 100%, 35% 100%);
+    }
+}

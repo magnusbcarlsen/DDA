@@ -1,0 +1,35 @@
+Forside
+	- News Feed
+	- "Velkomst-billede"
+	- Clean
+
+About
+	- Lidt historik
+	- Kort beskrivelse af bestyrelsen
+		- Contact link/LinkedIn/facebook/instagram
+
+Calender/Events
+- expand
+
+
+Join the org
+	- Membership
+		- Contact link
+		- Stripe
+- contact form 
+       
+	- Volunteer
+- contact form
+
+contact link coming soon 
+link til terms condition pricacy policy 
+
+
+Dansk/Engelsk?
+
+LOGO
+
+Inden den 19. 
+Events 
+about 
+membership 
