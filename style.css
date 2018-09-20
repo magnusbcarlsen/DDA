@@ -1033,11 +1033,11 @@ ol {
 }
 
 
-[data-aos="fade"] {
+[aos="fade"] {
     opacity: 0;
     transition-property: opacity;
   }
   
-  [data-aos="fade"].aos-animate {
+  [aos="fade"].aos-animate {
     opacity: 1;
   }
