@@ -98,6 +98,7 @@ header {
     position: fixed;
     padding: 5px;
     margin: 5px;
+    
 
 }
 
@@ -570,6 +571,7 @@ ol {
     height: 250px;
     object-fit: cover;
     clip-path: circle(44% at 50% 50%);
+    z-index: 3;
 
 }
 
@@ -1003,7 +1005,7 @@ ol {
     }
 
     .about_container {
-        clip-path: polygon(10% 0, 90% 0, 89% 11%, 80% 13%, 70% 100%, 30% 100%, 20% 13%, 11% 11%)
+        clip-path: polygon(5% 0, 95% 0, 91% 11%, 82% 13%, 70% 100%, 30% 100%, 18% 13%, 9% 11%)
 
 }
 }
@@ -1028,7 +1030,7 @@ ol {
     }
 
     .about_container {
-        clip-path: polygon(10% 0, 90% 0, 89% 11%, 80% 13%, 70% 100%, 30% 100%, 20% 13%, 11% 11%)
+        clip-path: polygon(5% 0, 95% 0, 91% 11%, 82% 13%, 70% 100%, 30% 100%, 18% 13%, 9% 11%)
     }
 }
 
@@ -1041,3 +1043,5 @@ ol {
   [aos="fade"].aos-animate {
     opacity: 1;
   }
+
+
